@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TJMUN</title>
+<link rel="shortcut icon" href="img/usg.png" />
+<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    
+<script src="f.js">
+</script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!--<a href="https://docs.google.com/forms/d/1T0feuZGPBw-Tf8ZoVJiiMSMfl2XX4_Npnuutls9-0lU" style="margin-top: 20px;" class="btn btn-appoint">Registration</a>-->
+
+<!-- <a href="https://forms.gle/5uHJKEa3iZVHWrbc9" target="_blank" style="margin-top: 20px;" class="btn btn-appoint">Registration</a> -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        console.log($(window).width())
+        if($(window).width()>768){  
+            $( '.dropdown' ).hover(
+                function(){
+                    $(this).children('.sub-menu').slideDown(190);
+                },
+                function(){
+                    $(this).children('.sub-menu').slideUp(190);
+                }
+            );
+        }
+    }); // end ready
+</script>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+        <script>
+            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+            formbutton("create", {
+                action: "https://formspree.io/xayvkeyb",
+                title: "How can we help?",
+                fields: [
+                    {
+                        type: "text",
+                        label: "Name:",
+                        name: "name",
+                        required: true,
+                        placeholder: "Name"
+                    },
+                    { 
+                        type: "number", 
+                        label: "Grade:", 
+                        name: "grade",
+                        required: true,
+                        placeholder: "Grade"
+                    },
+                    {
+                        type: "email",
+                        label: "Email:",
+                        name: "email",
+                        placeholder: "Email",
+                        required: true,
+                    },
+                    {
+                        type: "textarea",
+                        label: "Message:",
+                        name: "message",
+                        placeholder: "What's on your mind?",
+                    },
+                    
+                    { type: "submit" }      
+                ],
+                styles: {
+                title: {
+                backgroundColor: "#28657c"
+                },
+                button: {
+                backgroundColor: "#28657c"
+                }
+                },
+                initiallyVisible: false
+            });
+        </script>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section id="banner-gavel" class="banner" style="background: url('img/tjmun2020.jpg'); no-repeat fixed;background-size:cover;min-height: 420px;position: relative;" >
+		<div class="bg-color2">
+		    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top" style="background-color: rgba(40,101,124, 0.7)">
+			  <div class="container">
+
+				    <a style="" class="navbar-brand" href="./"><img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;"></a>
+
+					<button class="dropdown-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;">
+                    </button>
+                    
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto nav" style="display:inline-block">
+                            <!--<li><a href="{% url 'home' %}#covid19">COVID-19</a></li>-->
+                            <li class="nav-item"><a href="./"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="nav-item"><a href="./leadership">Leadership</a></li>
+                            <li class="nav-item"><a href="./calendar">Calendar</a></li>
+                            <!--<li><a href="./calendar.html">Calendar</a></li>-->
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./">TechMUN</a>
+                             <!--<li class="dropdown" style="font-size: 15px"><a href="#">TechMUN</a>-->
+                             <!--style = "width: 180px; margin-left:2px; margin-top:17px;"-->
+                                <ul class = "sub-menu">
+                                <!--<li><a href = "#" style = "width: 180px">More Info Coming Soon!</a></li>-->
+                                    <li class="dropdown-content"><a href = "/mun/registration">Registration</a></li>
+                                    <li class="dropdown-content"><a href = "./invitation">Invitation</a></li>
+                                    <li class="dropdown-content"><a href = "./secstaff">Directors</a></li>
+                                    <li class="dropdown-content"><a href = "./committees">Committees</a></li>
+                                    <li class="dropdown-content"><a href = "./schedule">Schedule</a></li>
+                                    <li class="dropdown-content"><a href = "./positionpapers">Position Papers</a></li>
+                                    <li class="dropdown-content"><a href = "./guests">Guest Speakers</a></li>
+                                    <!--<li class="dropdown-content"><a href = "schedule.html">Schedule</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/secstaff.html">Secretariat and Staff</a></li>-->
+                                <!--<li><a href = "{% url 'techmun:charity' %}">Charity</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/registration.html">Registration</a></li>-->
+                                    <!--<li><a href="{% url 'home:index' %}#covid19">Registration</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "cost">Costs and Info</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/positionpaper.html">Position Papers</a></li>-->
+                                    <!--<li class="dropdown-content"><a href="techmun/guests.html">Guest Speakers</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./forms">Forms</a></li>
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./awards">Awards</a>
+                                <ul class = "sub-menu">
+                                    <!--<li class="dropdown-content"><a href = "./awards.html">Conference</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./contact">Contact Us</a></li>
+                            
+                            <li>
+                                <form id="form" role="search" method="GET" action = "./">
+                                  <input style="height:40px; width: 160px;" type="search" id="query" name="q" placeholder="Search...">
+                                  <button style="height:38px; width:40px;" class="btn"><i style="text-align: center;" class = "fa fa-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+			  </div>
+            </nav>
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-text text-center">
+							<h1 style="color: white">TJMUN</h1>
+						</div>
+						<div class="overlay-detail text-center arrow">
+			               <a href="#service"><i class="fa fa-angle-down arrow"></i></a>
+			             </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--<h1 class="white">Leadership</h1>-->
+<!--<br>-->
+<!--<div class="container">-->
+<!--                <div class="alert alert-info">-->
+<!--                    <span class="fa fa-info-circle"></span>-->
+<!--                    <span>Registration for TECHMUN has opened! </span>-->
+<!--                    <i><b><u><a target="_blank" href="https://forms.gle/1vbrCF2eLHG1fJEcA">Register here</a></u></b></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            </div>-->
+<!--<br>-->
+
+
+<script>
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    let paramValue = url.searchParams.get("q");
+    if (paramValue !== null)
+    {
+        var temp = "https://www.google.com/search?q=site:activities.tjhsst.edu/mun+" + paramValue;
+        window.location.replace(temp);
+    }
+</script>
+
+<section id="service" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <h2 class="ser-title">Model UN</h2>
+                <hr class="botm-line">
+                <p>Model United Nations encompasses a simulation of the UN whereby students engage in political debate to tackle current global issues on the agenda. Based on their committees, students are assigned a delegate and are tasked with preparing draft resolutions, negotiating with others, and resolving conflicts while following proper parliamentary procedure.</p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-gavel"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Leadership</h4>
+                        <p>Our delegates possess leadership skills that enable them to command and lead blocs in committee while maintaining successful relations with others. </p>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-institution"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Public Policy</h4>
+                        <p>Delegates inquire about specific public polities and implement various others to directly resolve issues in their committee's agenda. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-group"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Diplomacy</h4>
+                        <p>Delegates manage international relations through negotiations and handle affairs effectively without arousing hostility. </p>
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-area-chart"></i>
+                    </div>
+                    <div class="icon-info">
+                        <h4>Research</h4>
+                        <p>Students research respective topics for their committee to develop a strong background and foundation leading to success. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ service-->
+<!--cta-->
+
+<section id="cta-1" class="section-padding">
+    <div class="container">
+        <h2 class="ser-title">What We Do</h2>
+        <hr class="botm-line">
+        <div class="row">
+            <div class="schedule-tab">
+            <div class="col-md-4 col-sm-4 bor-left">
+                <div class="mt-boxy-color"></div>
+                <div class="medi-info">
+                    <h3>TechMUN</h3>
+                    <p>TJMUN's local conference is held in the Alexandria area in April, and offers a competitive environment for delegates to flourish</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="medi-info">
+                    <h3>8th Periods</h3>
+                    <p>Feel free to stop by our 8th period meetings Friday A to socialize with the TJMUN community and improve your MUN skills</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mt-boxy-3">
+                <div class="mt-boxy-color"></div>
+                <div class="time-info">
+                        <h3>Conferences</h3>
+                        <p>While competing against hundreds of other delegates and schools at local and national conferences, TJMUN members are award-winning delegates</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--cta-->
+<!--about-->
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="section-title">
+                  <h2 class="head-title lg-line">The Ultimate<br>TJMUN Goal</h2>
+                  <hr class="botm-line">
+                  <p class="sec-para">To inspire and spread the splendors of Model United Nations to others while enhancing delegate performance.</p>
+                  <!--
+                  <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+              -->
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+               <div style="visibility: visible;" class="col-sm-9 more-features-box">
+                  <div class="more-features-box-text">
+                    <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                    <div class="more-features-box-text-description">
+                        <h3>Our delegates compete at the national level.</h3>
+                        <p>Despite tremendous competition and rigor at national conferences, our delegates manage to perform magnificently. Through these conferences, our delegates master effective speaking skills while collaborating with others. </p>
+                    </div>
+                  </div>
+                  <div class="more-features-box-text">
+                    <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                    <div class="more-features-box-text-description">
+                        <h3>TechMUN is one of the best local conferences.</h3>
+                        <p>Our annual conference, TechMUN, is one of the most attended conferences on the East Coast. Months of preparation and planning are devoted towards TechMUN so that it is the best experience for participating delegates.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ about-->
+<!--TJMUN Secretariat-->
+<section id="doctor-team" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ser-title">Meet Our Secretariat!</h2>
+                <hr class="botm-line">
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="thumbnail"> 
+                
+                  <!--<img src="/mun/img/techmunxxx/tanish.jpeg" alt="..." class="team-img">-->
+              
+                <div class="caption">
+                
+                  <h3>Anirudh Mantha</h3>
+                  <p>Secretary-General</p>
+                  <!--
+                  <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+              -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="thumbnail"> 
+                
+                  <!--<img src="/mun/img/techmunxxx/simar.jpeg" alt="..." class="team-img">-->
+                
+                <div class="caption">
+                  <h3>Tessa Joseph</h3>
+                  <p>Undersecretary-General</p>
+                  <!--
+                  <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+              -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="thumbnail"> 
+                  <!--<img src="/mun/img/techmunxxx/thrisha.jpeg" alt="..." class="team-img">-->
+
+                <div class="caption">
+                  <h3>Naisha Patel</h3>
+                  <p>Senator</p>
+                  <!--
+                  <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+                  -->
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="thumbnail"> 
+                
+                  <!--<img src="/mun/img/techmunxxx/anirudhmantha.jpeg" alt="..." class="team-img">-->
+                
+                <div class="caption">
+                  <h3>Adithiya Balaguru</h3>
+                  <p>Arbitrator</p>
+                  <!--
+                  <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  </ul>
+                -->
+                </div>
+              </div>
+            </div>
+        
+
+        </div>
+    </div>
+</section>
+<!--/ doctor team-->
+<!--testimonial-->
+
+
+<!--/ testimonial-->
+<!--cta 2-->
+
+<section id="cta-2" class="section-padding">
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-2"></div>
+            <div class="text-right-md col-md-4 col-sm-4">
+                <center>
+                <h2 class="section-title white lg-line">A few words<br>about us</h2>
+                </center>
+            </div>
+            <div class="col-md-4 col-sm-5">
+                  TJMUN's annual conference, TechMUN is known as one of the best local conferences in the region.
+              <p class="text-right text-primary"><i style="color: #0099c3">— TJMUN</i></p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<div class = "container">
+    <div class="col-md-12">
+        <h2 class="ser-title">Resources</h2>
+        <hr class="botm-line">
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!--contact-->
+<div>
+    <!--
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ser-title">Contact us</h2>
+                <hr class="botm-line">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <h3>Contact Info</h3>
+              <div class="space"></div>
+              <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>6560 Braddock Rd,<br>
+                Alexandria, VA 22312</p>
+              <div class="space"></div>
+              <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>tjmodelun@gmail.com</p>
+              <div class="space"></div>
+              <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>(703)-585-8284</p>
+            </div>
+            <div class="col-md-8 col-sm-8 marb20">
+                <div class="contact-info" style="margin-top: -80px;">
+                        <h3 class="cnt-ttl">Having Any Query! Or Want to Contact Us</h3>
+                        <div class="space"></div>
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            
+                            <div class="form-action">
+                                <button type="submit" class="btn btn-form">Send Message</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    -->
+</div>
+	
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>TJMUN is a club associated with Model United Nations competitions aimed at training and enhancing delegates' performance.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						    
+						    
+						    <!-- 
+                                All the links in the footer should remain intact. 
+                                You can delete the links only if you purchased the pro version.
+                                Licensing information: https://bootstrapmade.com/license/
+                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+                            -->
+							<p style="color: white">Along with <a href="https://bootstrapmade.com/" style="color: #00c18a">BootstrapMade</a></p>
+
+
+							<div class="">
+    							<!--<ul class="social-icon">-->
+    								<a  class="social-icon" href="https://www.facebook.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bglight-blue"><i class="fa fa-facebook" style="color: #fff;"></i></li></a>
+    								<a  class="social-icon" href="https://www.instagram.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bgred" style="text-align: center; color: #fff;"><i class="fa fa-instagram"></i></li></a>
+    								<!-- <li class="bgdark-blue" ><i class="fa fa-linkedin"></i></li>
+    								<li class="bglight-blue"><i class="fa fa-twitter"></i></li> -->
+						    </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</html>

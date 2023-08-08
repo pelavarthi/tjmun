@@ -1,0 +1,443 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TJMUN</title>
+<link rel="shortcut icon" href="../img/usg.png" />
+<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script>
+    $(document).ready(function() {
+        console.log($(window).width())
+        if($(window).width()>768){  
+            $( '.dropdown' ).hover(
+                function(){
+                    $(this).children('.sub-menu').slideDown(190);
+                },
+                function(){
+                    $(this).children('.sub-menu').slideUp(190);
+                }
+            );
+        }
+    }); // end ready
+</script>
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section id="banner-gavel" class="banner" style="background: url('img/tjmun2020.jpg'); no-repeat fixed;background-size:cover;min-height: 420px;position: relative;" >
+		<div class="bg-color2">
+		    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top" style="background-color: rgba(40,101,124, 0.7)">
+			  <div class="container">
+
+				    <a style="" class="navbar-brand" href="./"><img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;"></a>
+
+					<button class="dropdown-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;">
+                    </button>
+                    
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto nav" style="display:block">
+                            <!--<li><a href="{% url 'home' %}#covid19">COVID-19</a></li>-->
+                            <li class="nav-item"><a href="./"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="nav-item"><a href="./leadership">Leadership</a></li>
+                            <li class="nav-item"><a href="./calendar">Calendar</a></li>
+                            <!--<li><a href="./calendar.html">Calendar</a></li>-->
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./">TechMUN</a>
+                             <!--<li class="dropdown" style="font-size: 15px"><a href="#">TechMUN</a>-->
+                             <!--style = "width: 180px; margin-left:2px; margin-top:17px;"-->
+                                <ul class = "sub-menu">
+                                <!--<li><a href = "#" style = "width: 180px">More Info Coming Soon!</a></li>-->
+                                    <li class="dropdown-content"><a href = "/mun/registration">Registration</a></li>
+                                    <li class="dropdown-content"><a href = "./invitation">Invitation</a></li>
+                                    <li class="dropdown-content"><a href = "./secstaff">Directors</a></li>
+                                    <li class="dropdown-content"><a href = "./committees">Committees</a></li>
+                                    <li class="dropdown-content"><a href = "./schedule">Schedule</a></li>
+                                    <li class="dropdown-content"><a href = "./positionpapers">Position Papers</a></li>
+                                    <li class="dropdown-content"><a href = "./guests">Guest Speakers</a></li>
+                                    <!--<li class="dropdown-content"><a href = "schedule.html">Schedule</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/secstaff.html">Secretariat and Staff</a></li>-->
+                                <!--<li><a href = "{% url 'techmun:charity' %}">Charity</a></li>-->
+                                    
+                                    <!--<li><a href="{% url 'home:index' %}#covid19">Registration</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "cost">Costs and Info</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/positionpaper.html">Position Papers</a></li>-->
+                                    <!--<li class="dropdown-content"><a href="techmun/guests.html">Guest Speakers</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./forms">Forms</a></li>
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./awards">Awards</a>
+                                <ul class = "sub-menu">
+                                    <!--<li class="dropdown-content"><a href = "./awards.html">Conference</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./contact">Contact Us</a></li>
+                            <li>
+                                <form id="form" role="search" method="GET" action = "./">
+                                  <input style="height:40px; width: 160px;" type="search" id="query" name="q" placeholder="Search...">
+                                  <button style="height:38px; width:40px;" class="btn"><i style="text-align: center;" class = "fa fa-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+			  </div>
+            </nav>
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-text text-center">
+							<h1 style="color: white">TJMUN</h1>
+						</div>
+						<div class="overlay-detail text-center arrow">
+			               <a href="#service"><i class="fa fa-angle-down arrow"></i></a>
+			             </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	  
+	<br>
+	
+<!--	    <div class="container">-->
+<!--	    <div class="alert alert-warning" style="font-size: 16;" padding:"15px"> <i class="fa fa-exclamation-triangle" ></i> <b>Background guides will be made available by Friday, March 10</b> </div>-->
+<!--	    </div>-->
+<!--    <section class="section-padding", id="service" >-->
+<!--        <div class="container">-->
+<!--            <!-v >-->
+<!--                <h2 style="text-align: center;"> Middle School Committees </h2>-->
+<!--                <div>-->
+<!--                    <h3 style="text-align: center;"> General Assemblies</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto auto;">-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/msunhrc.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!--src="" alt="Planetary Trade Council"></a> -->
+
+<!--            <h4><i style="color: rgb(0, 89, 192);">United Nations Human Rights Council (UNHRC)</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Euthanasia and its Effects on the Morality of the Refugee Community</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: The Right to Privacy in the Digital Age</p> </h4>-->
+<!--            <h4><p>Double Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/mswho.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">World Health Organization (WHO)</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Eliminating Immunosuppression to Prevent Vaccine Failure</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Mitigating Mental Health Disorders in a Post-Pandemic World</p> </h4>-->
+<!--            <h4><p>Double Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+<!--                    </div>-->
+
+<!--                    <h3 style="text-align: center;"> Specialized Committees</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto auto;">-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/msnorthpole.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">Adventures in the North Pole: Santa's Helpers</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Rise of Krampus</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Restoring Santa’s Workshop Following the Pixie Dust Apocalypse</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/msnick.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">The Clash of the Creators: Nickelodeon Kids' Choice Awards</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Revitalizing the Popularity of the Nickelodeon Choice Awards</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Addressing Controversy About Nominations</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/msnuclear.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">World Nuclear Association (WNA)</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Promoting Nuclear Energy in Developing Nations</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Breakthrough of Fusion in Nuclear Energy</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+<!--                    </div>-->
+
+<!--                    <h3 style="text-align: center;"> Crisis Committees</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto auto;">-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/msottoman.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">A Lasting Legacy: The Ottoman Empire, 1517</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Invasion of Rhodes</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Judicial and Legal Reform</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/mstwitter.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">Chirp Chirp: Twitter Board of Directors 2047</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Adapting to a New CEO</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Increasing Security Across the Platform</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--<br>-->
+<!--<hr>-->
+<!--<br>-->
+<!--                <h2 style="text-align: center;"> High School Committees </h2>-->
+<!--                <div>-->
+<!--                    <h3 style="text-align: center;"> General Assemblies</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto auto;">-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/hsdisec.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">Disarmament and International Security Committee (DISEC)</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: The Use of Drones in Warfare</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Combating Illicit Arms Trade and Trafficking of Weaponss</p> </h4>-->
+<!--            <h4><p>Double Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsunicef.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">United Nations International Children's Emergency Fund (UNICEF)</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Education for Countries in Conflict</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Dealing with Forced Migration and Refugees</p> </h4>-->
+<!--            <h4><p>Double Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hswfp.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">World Food Programme (WFP) </i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Maintaining Food Supply in the Face of Rising Costs</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Food Supply in Warzones</p> </h4>-->
+<!--            <h4><p>Double Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+<!--                    </div>-->
+
+<!--                    <h3 style="text-align: center;"> Specialized Committees</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto auto;">-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/hssalem.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+            <!-- <img src="" alt="Planetary Trade Council"></a> -->
+<!--            <h4><i style="color: rgb(0, 89, 192);">Black Magic Mayhem: Salem Witch Trials, 1692</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: The Hunt - How To Proceed with Hunting Witches</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: The Horror - Eliminating Mass Paranoia during the Witch Trials</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsblackpanther.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">A New Era: Black Panther</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Reconstruction Wakanda - After the Death of T'challa</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Preventing War - The Talokanil vs. Humanity</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsgop.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">The Grand Old Party: Republican Primaries, 2024</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: The Economy and Recession</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Addressing Immigration</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsnasa.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">To Infinity and Beyond: National Aeronautics and Space Administration (NASA)</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: The Future of Space Exploration</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Mitigating Space Debris</p> </h4>-->
+<!--            <h4><p>Double Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+
+
+<!--                    </div>-->
+
+<!--                    <h3 style="text-align: center;"> Crisis Committees</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto auto;">-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/hspablo.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">Got Dope like Pablo: Escobar's Trustees, 1991</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Keeping the Cartel Alive</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Getting Rid of Los Pepes</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsquantum.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">Entering the Realm: Quantum World Congress, 2050</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Cracking Shor's Algorithm</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Securing Sensitive Data from Quantum Computing</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsjccchaos.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">JCC Hunger Games: The Council of Chaos</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Quelling the Rebellion</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Defect in the Arena</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsjcctributes.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">JCC Hunger Games: The District Tributes</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Unkown District Uprising</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Unforeseen Challenges in the Arena</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--<a style="text-decoration: none;" href = "/mun/techmun/committees/hsf1.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">Champion's Race: Formula 1 Vegas, 2023</i></h4>-->
+<!--            <h4> <p style="color: gray;">Topic 1: Troubled History - Race Conditions and Crash Control</p> </h4>-->
+<!--            <h4> <p style="color: gray">Topic 2: Tensions within FIA and Senior Management</p> </h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+<!--                    </div>-->
+
+<!--                    <h3 style="text-align: center;"> Ad-hoc Committee</h3>-->
+<!--                    <div class = "grid-container" style="grid-template-columns: auto;">-->
+
+<!--    <a style="text-decoration: none;" href = "/mun/techmun/committees/hsadhocspec.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192); margin:auto">Ad-Hoc Specialized Committee of the Secretary General</i></h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--    </a>-->
+<!--                        <a style="text-decoration: none;" href = "/mun/techmun/committees/hsadhoc.html">-->
+<!--    <div class="leadership-format grid-item grow">-->
+        
+<!--            <h4><i style="color: rgb(0, 89, 192);">Ad-Hoc Crisis Committee of the Secretary General</i></h4>-->
+<!--            <h4><p>Single Delegation</p></h4>-->
+        
+<!--    </div>-->
+<!--</a>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+                
+                
+                
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </section>-->
+    <div class="container">
+            <br>
+        <h1>Coming Spring 2024!</h1>
+        <br>
+        </div>
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>TJMUN is a club associated with Model United Nations competitions aimed at training and enhancing delegates' performance.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						    
+						    
+						    <!-- 
+                                All the links in the footer should remain intact. 
+                                You can delete the links only if you purchased the pro version.
+                                Licensing information: https://bootstrapmade.com/license/
+                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+                            -->
+							<p style="color: white">Along with <a href="https://bootstrapmade.com/" style="color: #00c18a">BootstrapMade</a></p>
+
+
+							<div class="">
+    							<!--<ul class="social-icon">-->
+    								<a  class="social-icon" href="https://www.facebook.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bglight-blue"><i class="fa fa-facebook" style="color: #fff;"></i></li></a>
+    								<a  class="social-icon" href="https://www.instagram.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bgred" style="text-align: center; color: #fff;"><i class="fa fa-instagram"></i></li></a>
+    								<!-- <li class="bgdark-blue" ><i class="fa fa-linkedin"></i></li>
+    								<li class="bglight-blue"><i class="fa fa-twitter"></i></li> -->
+						    </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>r>
+</body>

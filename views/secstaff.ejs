@@ -1,0 +1,255 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TJMUN</title>
+<link rel="shortcut icon" href="../img/usg.png" />
+<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+
+<script>
+    $(document).ready(function() {
+        console.log($(window).width())
+        if($(window).width()>768){  
+            $( '.dropdown' ).hover(
+                function(){
+                    $(this).children('.sub-menu').slideDown(190);
+                },
+                function(){
+                    $(this).children('.sub-menu').slideUp(190);
+                }
+            );
+        }
+    }); // end ready
+</script>
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section id="banner-gavel" class="banner" style="background: url('img/tjmun2020.jpg'); no-repeat fixed;background-size:cover;min-height: 420px;position: relative;" >
+		<div class="bg-color2">
+		    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top" style="background-color: rgba(40,101,124, 0.7)">
+			  <div class="container">
+
+				    <a style="" class="navbar-brand" href="./"><img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;"></a>
+
+					<button class="dropdown-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;">
+                    </button>
+                    
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto nav" style="display:block">
+                            <!--<li><a href="{% url 'home' %}#covid19">COVID-19</a></li>-->
+                            <li class="nav-item"><a href="./"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="nav-item"><a href="./leadership">Leadership</a></li>
+                            <li class="nav-item"><a href="./calendar">Calendar</a></li>
+                            <!--<li><a href="./calendar.html">Calendar</a></li>-->
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./">TechMUN</a>
+                             <!--<li class="dropdown" style="font-size: 15px"><a href="#">TechMUN</a>-->
+                             <!--style = "width: 180px; margin-left:2px; margin-top:17px;"-->
+                                <ul class = "sub-menu">
+                                <!--<li><a href = "#" style = "width: 180px">More Info Coming Soon!</a></li>-->
+                                                                        <li class="dropdown-content"><a href = "/mun/registration">Registration</a></li>
+
+                                    <li class="dropdown-content"><a href = "./invitation">Invitation</a></li>
+                                    <li class="dropdown-content"><a href = "./secstaff">Directors</a></li>
+                                    <li class="dropdown-content"><a href = "./committees">Committees</a></li>
+                                    <li class="dropdown-content"><a href = "./schedule">Schedule</a></li>
+                                    <li class="dropdown-content"><a href = "./positionpapers">Position Papers</a></li>
+                                    <li class="dropdown-content"><a href = "./guests">Guest Speakers</a></li>
+                                    <!--<li class="dropdown-content"><a href = "schedule.html">Schedule</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/secstaff.html">Secretariat and Staff</a></li>-->
+                                <!--<li><a href = "{% url 'techmun:charity' %}">Charity</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/registration.html">Registration</a></li>-->
+                                    <!--<li><a href="{% url 'home:index' %}#covid19">Registration</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "cost">Costs and Info</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/positionpaper.html">Position Papers</a></li>-->
+                                    <!--<li class="dropdown-content"><a href="techmun/guests.html">Guest Speakers</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./forms">Forms</a></li>
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./awards">Awards</a>
+                                <ul class = "sub-menu">
+                                    <!--<li class="dropdown-content"><a href = "./awards.html">Conference</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./contact">Contact Us</a></li>
+                            <li>
+                                <form id="form" role="search" method="GET" action = "./">
+                                  <input style="height:40px; width: 160px;" type="search" id="query" name="q" placeholder="Search...">
+                                  <button style="height:38px; width:40px;" class="btn"><i style="text-align: center;" class = "fa fa-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+			  </div>
+            </nav>
+		    
+		    
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-text text-center">
+							<h1 style="color: white">TJMUN  Directors</h1>
+						</div>
+						<div class="overlay-detail text-center arrow">
+			               <a href="#service"><i class="fa fa-angle-down arrow"></i></a>
+			             </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!--
+    <section class="section-padding" id="service">
+            <div class="container">
+                
+                <div style="font-size: 18px; line-height: 25px; color: black">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/tanish.jpeg"/> 
+                        <h4 style="color: #28657c; text-align: center;">Tanish Jain</h4>
+                        <h4 style="color: black;  text-align: center ">Secretary-General</h4>
+                        
+                        <p style= "text-align: left">Delegates, faculty advisors, and friends: welcome to TechMUN XXX! It is my honor to serve as the Secretary-General for the 30th iteration of this amazing conference. We have a weekend of fun and intense debate planned ahead for you all, and I hope that you all take this as an opportunity to learn and enjoy! I joined Model UN as a freshman and it has had a huge impact on my life. From debating indigenous peoples’ rights in UNHRC to pulling off crazy heists in crisis, I have made friends across the world and memories that I will hold forever.  As TechMUN’s Sec-Gen, I ask you all to aspire to be better delegates, and I hope that our conference will help you get there.</p>
+                        <p style= "text-align: left">When I’m not competing for TJMUN, writing emails for TJMUN, or telling other people to do my TJMUN work, you can catch me brushing up on my guitar skills or playing basketball. More likely, though, I’d be getting roasted by Simar for my outfits… every single day. However, running TJMUN and hosting TechMUN alongside her might make up for her insults. Anyway, I am absolutely ecstatic to see you all in March, and if you have any questions, comments, or concerns, feel free to reach out!</p>
+                        
+                    </div>
+                    <hr style= "height:2px;border-width:0;color:gray;background-color:gray">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/simar.jpeg"/> 
+                        <h4 style="color: #28657c; text-align: center">Simar Narula</h4>
+                        <h4 style="color: black; text-align: center">Under-Secretary-General</h4>
+                        
+                        <p style= "text-align: left">Hi everyone, and welcome to TechMUN XXX! My name is Simar Narula, and I’m proud to be serving as your Under Secretary-General this year. From attending TechMUN in middle school to being able to run this conference, I’m beyond excited to be a part of this amazing experience for all of you. Over the last 6 years, MUN has given me some of my most cherished experiences. Outside of MUN, you can find me drinking unhealthy amounts of iced coffee, debating whether or not I should buy a new pair of sneakers, or roasting Tanish for his middle-school type fashion sense.</p>
+                        <p style= "text-align: left">I hope you are all able to enjoy yourself in a weekend of intense debate and negotiations. My advice for you— just do it. Raise that placard high. Speak up in front of everyone. Write that crazy directive. Make someone laugh. This weekend, I urge you all to embody the spirit of innovation, diplomacy, and collegiality that TechMUN has to offer — whether these be one of your first conferences or your last. Don’t hesitate to contact us if you have any questions. See you all in March!</p>
+                        
+                    </div>
+<hr style= "height:2px;border-width:0;color:gray;background-color:gray">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/thrisha.jpeg"/> 
+                        <h4 style="color: #28657c;  text-align: center">Thrisha Sakamuri</h4>
+                        <h4 style="color: black;  text-align: center">Director of Delegations</h4>
+                        
+                        <p style= "text-align: left">Hey everyone! I am Thrisha Sakamuri and I am beyond excited to serve as your Director of Delegations for TechMUN XXX. I’ve been doing MUN for the last four years, and it has been a huge part of my life all throughout high school. Not only have I been able to make some amazing memories with my friends through MUN, I’ve developed and I couldn’t have asked for a better MUN team to experience these last four years with. From talking to my friends in hotel rooms at 3 AM to chairing KUWTK at TechMUN last year, I have made countless memories in MUN, and I hope that YOU can make some great memories at TechMUN 30! </p>
+                        <p style= "text-align: left">Other than responding to all your questions on the TJMUN email, you can find me with the TJ FIRST Tech Challenge team, playing lacrosse, or getting sushi with friends. If you have any questions (committee-affiliated or not), feel free to reach out :) Can’t wait to meet you all in March!</p>
+                        
+                    </div>
+					<hr style= "height:2px;border-width:0;color:gray;background-color:gray">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/anirudhmantha.png"/> 
+                        <h4 style="color: #28657c;  text-align: center">Anirudh Mantha</h4>
+                        <h4 style="color: black;  text-align: center">Director of General Staff</h4>
+                        
+                        <p style= "text-align: left">Delegates, I would like to welcome you all to TechMUN XXX! My name is Anirudh Mantha, and I am honored to serve as your Director of General Staff. I started MUN in seventh grade, accidentally wearing the same colored shirt and tie, and over the past 5 years I saw myself grow as a delegate and am officially coined as that "MUN kid". From debating the implementation of block-chain, to re-ratifying the Sokovia Accords, the memories made and the stories that I can tell are cherishable experiences that I will hold beyond high school. My experiences as a part of TJMUN has given me the opportunity to grow as a public speaker and forge new friendships. Outside of MUN, you can probably find me playing basketball, hanging out with friends, or building rockets. </p>
+                        <p style= "text-align: left">Whether this is your first conference or last, I ask each of you to take a step out of your comfort zone and try something new. Whether that means coming out of your comfort zone and giving that overly dramatic speech you’ve been holding back or helping out that new delegate that has been sitting idle all committee. Most importantly, I ask each of you to make TechMUN XXX a memorable experience for you and your fellow delegates. As always, feel more than welcome to wave hello, introduce yourself and share your experiences or a funny story whenever you see me! You’ll most definitely find me dropping by each committee room including yours to ensure your chairs, directors, and staffers have everything they need to provide you with the best TechMUN experience possible. I look forward to meeting you all in March! If at any time you have any questions or concerns, please email tjmodelun@gmail.com. </p>
+                        
+                    </div>
+                    <hr style= "height:2px;border-width:0;color:gray;background-color:gray">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/nandini.jpeg"/> 
+                        <h4 style="color: #28657c;  text-align: center">Nandini Shyamala</h4>
+                        <h4 style="color: black;  text-align: center">Director of Crisis</h4>
+                        
+                        <p style= "text-align: left">What’s up everyone, and welcome to TechMUN XXX! My name is Nandini Shyamala, and I am honored to serve as your Director of Crisis this year! I am currently a senior at TJ and have been doing mun since freshmen year.  When I first started MUN I had no idea that it would mean so much to me. From making speeches about cow farts causing climate change in GAs to running underground crime syndicates in crisis, MUN has been an amazing opportunity for me to perfect my speaking skills while also finding creative solutions to complex problems. My favorite thing about TJMUN is the family. Whether it’s watching Sachin make an attempt at ice skating at RTC or helping my novices plan world domination in their committees, the people are what make TJMUN the club it is today. When I’m not cramming the night before a conference, you can find me playing lacrosse, practicing my dance routines in the shower, or fan-girling over Formula 1. </div>
+                        <p style= "text-align: left">As your Director of Crisis, my goal is to give you a crisis experience that is not only smooth but will also keep you on your toes. With fun and exciting crisis updates (our actors will be oscar worthy) to committees that are so dynamic things could change in a second, crisis is the place to be at Techmun. I hope that each and every one of you maximizes this opportunity to get out of your comfort zone and just have fun. Whether it’s trying an arc that includes aliens or just making new friends, in your committee, I hope you leave this conference happy. Throughout TechMUN, I will be popping in and out of crisis committees and checking in, so if you have any questions or just want a new friend, feel free to start up a conversation! See you in March!</p>
+                        
+                    <hr style= "height:2px;border-width:0;color:gray;background-color:gray">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/ananya.jpeg"/> 
+                        <h4 style="color: #28657c;  text-align: center">Ananya Enganti</h4>
+                        <h4 style="color: black;  text-align: center">Director of Hospitality</h4>
+                        
+                        <p style= "text-align: left">Hey  everyone! My name is Ananya Enganti and I am a junior at TJ. I hope all of you are excited for TECHMUN XXX as much as I am. I couldn’t keep my excitement to just one committee and seeing some of you, so luckily as Director of Hospitality  I have the privilege of running around to every committee and seeing all of you! (P.S buy candy grams pretty please)</p>
+                        <p style= "text-align: left">I have tried a million different activities in my high school career, but the only one that’s been there from the beginning was MUN. I have been doing MUN since freshman year and TJMUN  has come to be like a second family. At times it can be daunting, but the reward is something that I know I will always keep with me. I have met some of my best friends to this date through MUN and formed some of my favorite memories such asTJ initiation, having our boba stolen from sophomores, and watching Nandini choke on spicy chipotle. Although MUN is a huge part of my life, outside of it you can catch me squeezing my dog to death, buying chipotle every single day, or sending hate mail to Tyler Huntley #goravens. All jokes aside, I hope all of you will come to love MUN and TECHMUN as much as I do and have a great time forming your own special memories. See you all soon!</p>
+                        
+                    </div>
+                    <hr style= "height:2px;border-width:0;color:gray;background-color:gray">
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/lucas.jpeg"/> 
+                        <h4 style="color: #28657c;  text-align: center">Lucas Ribeiro</h4>
+                        <h4 style="color: black;  text-align: center">Director of Media</h4>
+                        
+                        <p style= "text-align: left">Hi! I'm Lucas Ribeiro and I'm a senior at TJ! I'm so excited to work as your Director of Media for TECHMUN XXX! I've been in MUN since eighth grade, and it's been an incredible experience so far! Outside of MUN, I photograph and write articles for tjToday, TJHSST's school newspaper. I also enjoy hiking, cycling, google earth, taking public transit for fun, and volleyball.</p>
+                        <p style= "text-align: left">You'll see me(and the rest of the photography staff) taking photos and videos throughout the conference. The opening and closing ceremonies will be edited by my team as well. I hope to make TechMUN XXX a memorable experience for everyone, whether it's through a picture of an insurrection in your Crisis Committee, or by registering that moment when you finally stepped out of your comfort zone and confidently addressed your GA. If you have any questions, or would like to be sent a photo from the opening or closing ceremony videos, contact me at lucaszr20@gmail.com </p>
+                        
+                    </div>
+                            <hr style= "height:2px;border-width:0;color:gray;background-color:gray">            
+                    <div>
+                         <img style="max-width: 400px; display:block; margin-left: auto; margin-right: auto" src="/mun/img/techmunxxx/pranav.jpeg"/> 
+                        <h4 style="color: #28657c;  text-align: center">Pranav Elavarthi</h4>
+                        <h4 style="color: black;  text-align: center">Director of Technology</h4>
+                        
+                        <p style= "text-align: left">System.out.println(</p>
+                        <p style= "text-align: left">Hey guys! My name is Pranav Elavarthi, and I am a junior. I am lucky enough to be your Director of Technology at TECHMUN XXX, and I’m so excited to see you guys compete. I first started MUN in eighth grade at Rachel Carson, and it has been an incredible experience. From massive GA committees🤮 to riveting crisis updates, I have experienced so much through MUN. MUN has let me grow as a person from the nerdy shy kid to, let’s face it, still the nerdy shy kid. But, seriously though, MUN has truly been an amazing experience for me, and I enjoyed every second of it, and I hope it will do the same for you. Outside of MUN you can always find me grinding Clash Royale and Civ 6, watching Family Guy, or playing Taylor Swift on repeat. I hope you guys all enjoy your TECHMUN experience, and I look forward to seeing you guys in March!);</p>
+                        
+                    </div>
+                    
+                </div>
+                            </div>
+        </section>
+    -->
+    <div class="container">
+            <br>
+        <h1>Coming Spring 2024!</h1>
+        <br>
+        </div>
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p style= "text-align: left">TJMUN is a club associated with Model United Nations competitions aimed at training and enhancing delegates' performance.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						    
+						    
+						    <!-- 
+                                All the links in the footer should remain intact. 
+                                You can delete the links only if you purchased the pro version.
+                                Licensing information: https://bootstrapmade.com/license/
+                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+                            -->
+							<p style="color: white">Along with <a href="https://bootstrapmade.com/" style="color: #00c18a">BootstrapMade</a></p>
+
+
+							<div class="">
+    							<!--<ul class="social-icon">-->
+    								<a  class="social-icon" href="https://www.facebook.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bglight-blue"><i class="fa fa-facebook" style="color: #fff;"></i></li></a>
+    								<a  class="social-icon" href="https://www.instagram.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bgred" style="text-align: center; color: #fff;"><i class="fa fa-instagram"></i></li></a>
+    								<!-- <li class="bgdark-blue" ><i class="fa fa-linkedin"></i></li>
+    								<li class="bglight-blue"><i class="fa fa-twitter"></i></li> -->
+						    </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>

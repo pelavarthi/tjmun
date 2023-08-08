@@ -1,0 +1,213 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERROR</title>
+<link rel="shortcut icon" href="img/usg.png" />
+<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!--<a href="https://docs.google.com/forms/d/1T0feuZGPBw-Tf8ZoVJiiMSMfl2XX4_Npnuutls9-0lU" style="margin-top: 20px;" class="btn btn-appoint">Registration</a>-->
+
+<!-- <a href="https://forms.gle/5uHJKEa3iZVHWrbc9" target="_blank" style="margin-top: 20px;" class="btn btn-appoint">Registration</a> -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script>
+    $(document).ready(function() {
+        console.log($(window).width())
+        if($(window).width()>768){  
+            $( '.dropdown' ).hover(
+                function(){
+                    $(this).children('.sub-menu').slideDown(190);
+                },
+                function(){
+                    $(this).children('.sub-menu').slideUp(190);
+                }
+            );
+        }
+    }); // end ready
+</script>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+        <script>
+            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+            formbutton("create", {
+                action: "https://formspree.io/xayvkeyb",
+                title: "How can we help?",
+                fields: [
+                    {
+                        type: "text",
+                        label: "Name:",
+                        name: "name",
+                        required: true,
+                        placeholder: "Name"
+                    },
+                    { 
+                        type: "number", 
+                        label: "Grade:", 
+                        name: "grade",
+                        required: true,
+                        placeholder: "Grade"
+                    },
+                    {
+                        type: "textarea",
+                        label: "Message:",
+                        name: "message",
+                        placeholder: "What's on your mind?",
+                    },
+                    { type: "submit" }      
+                ],
+                styles: {
+                title: {
+                backgroundColor: "#28657c"
+                },
+                button: {
+                backgroundColor: "#28657c"
+                }
+                },
+                initiallyVisible: false
+            });
+        </script>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  	<!--banner-->
+	<section id="banner-gavel" class="banner" style="background: url('img/tjmun2020.jpg'); no-repeat fixed;background-size:cover;min-height: 420px;position: relative;" >
+		<div class="bg-color2">
+		    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top" style="background-color: rgba(40,101,124, 0.7)">
+			  <div class="container">
+
+				    <a style="" class="navbar-brand" href="./"><img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;"></a>
+
+					<button class="dropdown-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="img/logo5.png" class="img-responsive" style="height: 65px; width: 160px; margin-top: -24px;">
+                    </button>
+                    
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto nav" style="display:block">
+                            <!--<li><a href="{% url 'home' %}#covid19">COVID-19</a></li>-->
+                            <li class="nav-item"><a href="./"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="nav-item"><a href="./leadership">Leadership</a></li>
+                            <li class="nav-item"><a href="./calendar">Calendar</a></li>
+                            <!--<li><a href="./calendar.html">Calendar</a></li>-->
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./">TechMUN</a>
+                             <!--<li class="dropdown" style="font-size: 15px"><a href="#">TechMUN</a>-->
+                             <!--style = "width: 180px; margin-left:2px; margin-top:17px;"-->
+                                <ul class = "sub-menu">
+                                <!--<li><a href = "#" style = "width: 180px">More Info Coming Soon!</a></li>-->
+                                    <li class="dropdown-content"><a href = "/mun/registration">Registration</a></li>
+                                    <li class="dropdown-content"><a href = "./invitation">Invitation</a></li>
+                                    <li class="dropdown-content"><a href = "./secstaff">Directors</a></li>
+                                    <li class="dropdown-content"><a href = "./committees">Committees</a></li>
+                                    <li class="dropdown-content"><a href = "./schedule">Schedule</a></li>
+                                    <li class="dropdown-content"><a href = "./positionpapers">Position Papers</a></li>
+                                    <li class="dropdown-content"><a href = "./guests">Guest Speakers</a></li>
+                                    <!--<li class="dropdown-content"><a href = "schedule.html">Schedule</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/secstaff.html">Secretariat and Staff</a></li>-->
+                                <!--<li><a href = "{% url 'techmun:charity' %}">Charity</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/registration.html">Registration</a></li>-->
+                                    <!--<li><a href="{% url 'home:index' %}#covid19">Registration</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "cost">Costs and Info</a></li>-->
+                                    <!--<li class="dropdown-content"><a href = "techmun/positionpaper.html">Position Papers</a></li>-->
+                                    <!--<li class="dropdown-content"><a href="techmun/guests.html">Guest Speakers</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./forms">Forms</a></li>
+                            
+                            <li class="nav-item dropdown" style="font-size: 15px"><a href="./awards">Awards</a>
+                                <ul class = "sub-menu">
+                                    <!--<li class="dropdown-content"><a href = "./awards.html">Conference</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="./contact">Contact Us</a></li>
+                            <li>
+                                <form id="form" role="search" method="GET" action = "./">
+                                  <input style="height:40px; width: 160px;" type="search" id="query" name="q" placeholder="Search...">
+                                  <button style="height:38px; width:40px;" class="btn"><i style="text-align: center;" class = "fa fa-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+			  </div>
+            </nav>
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-text text-center">
+							<h1 style="color: white">Something Went Wrong!?</h1>
+						</div>
+						<div class="overlay-detail text-center arrow">
+			               <a href="#service"><i class="fa fa-angle-down arrow"></i></a>
+			             </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--<h1 class="white">Leadership</h1>-->
+<div style="margin-left:25px">
+<br>
+<br>
+<div class="alert alert-warning">
+    <i class="fa fa-warning"></i><span> You reached a page that doesn't exist</span>
+    <br>
+    <p>Contact a member of secretariat if you have any questions</p>
+</div>
+<br>
+<br>
+</div>
+<!--{% endblock %}-->
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">About Us</h4>
+							</div>
+							<div class="info-sec">
+								<p>TJMUN is a club associated with Model United Nations competitions aimed at training and enhancing delegates' performance.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Quick Links</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Follow us</h4>
+						    
+						    
+						    <!-- 
+                                All the links in the footer should remain intact. 
+                                You can delete the links only if you purchased the pro version.
+                                Licensing information: https://bootstrapmade.com/license/
+                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+                            -->
+							<p style="color: white">Along with <a href="https://bootstrapmade.com/" style="color: #00c18a">BootstrapMade</a></p>
+
+
+							<div class="">
+    							<!--<ul class="social-icon">-->
+    								<a  class="social-icon" href="https://www.facebook.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bglight-blue"><i class="fa fa-facebook" style="color: #fff;"></i></li></a>
+    								<a  class="social-icon" href="https://www.instagram.com/tjhsstmun/" target="_blank" rel="noopener noreferrer"><li class="bgred" style="text-align: center; color: #fff;"><i class="fa fa-instagram"></i></li></a>
+    								<!-- <li class="bgdark-blue" ><i class="fa fa-linkedin"></i></li>
+    								<li class="bglight-blue"><i class="fa fa-twitter"></i></li> -->
+						    </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
